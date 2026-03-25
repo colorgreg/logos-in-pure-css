@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Logos UI Kit</title>
+    <link rel="stylesheet" href="apple/apple.css">
+    <link rel="stylesheet" href="dropbox/dropbox.css">
+    <link rel="stylesheet" href="evernote/evernote.css">
+    <link rel="stylesheet" href="facebook/facebook.css">
+    <link rel="stylesheet" href="github/github.css">
+    <link rel="stylesheet" href="linkedin/linkedin.css">
+    <link rel="stylesheet" href="twitter/twitter.css">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f6fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      .hero {
+        margin-bottom: 1.25rem;
+      }
+      .hero h1 {
+        margin: 0;
+      }
+      .hero p {
+        color: var(--muted);
+      }
+      .meta {
+        margin-top: .5rem;
+        font-size: .875rem;
+        color: var(--muted);
+      }
+      .logo-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .logo-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .logo-card h2 {
+        margin: 0;
+      }
+      .logo-card header p {
+        margin-top: .25rem;
+        color: var(--muted);
+      }
+      .logo-preview-row {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        gap: .75rem;
+        align-items: center;
+      }
+      .logo-preview {
+        border: 1px dashed var(--line);
+        border-radius: 8px;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+      }
+      .preview-small {
+        min-height: 80px;
+      }
+      div[class^="logo-"] { display: inline-block; }
+      details {
+        margin-top: .75rem;
+      }
+      summary {
+        cursor: pointer;
+        color: #2563eb;
+      }
+      pre {
+        margin: .5rem 0 0;
+        font-size: .75rem;
+        line-height: 1.4;
+        background: #111827;
+        color: #e5e7eb;
+        padding: .75rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      .logo-files {
+        margin: .75rem 0 0;
+        font-size: .875rem;
+      }
+      .logo-files a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      .logo-files a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <h1>UI kit: logos-in-pure-css</h1>
+        <p>Podgląd lokalny/online wszystkich dostępnych elementów + gotowe snippety.</p>
+        <p class="meta">Elementów: 7 · Wygenerowano: 2026-03-25T16:46:39.055Z · Aby odświeżyć: <code>node scripts/generate-ui-kit.js</code></p>
+      </section>
+
+      <section class="logo-grid">
+
+      <article class="logo-card" id="apple">
+        <header>
+          <h2>Apple</h2>
+          <p><code>apple</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-apple-large">
+              <div class="blue-curve-left"></div>
+              <div class="blue-curve-right"></div>
+              <div class="blue"></div>
+              <div class="blue-none"></div>
+              <div class="purple"></div>
+              <div class="orange"></div>
+              <div class="orange-curve"></div>
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green-curve-left"></div>
+              <div class="green-curve-right"></div>
+              <div class="green"></div>
+              <div class="green-none"></div>
+              <div class="green-leaf"></div>
+              <div class="bottom-left-none"></div>
+              <div class="bottom-right-none"></div>
+              <div class="top-left-none"></div>
+              <div class="top-right-none"></div>
+              <div class="apple-none"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-apple-small">
+              <div class="blue-curve-left"></div>
+              <div class="blue-curve-right"></div>
+              <div class="blue"></div>
+              <div class="blue-none"></div>
+              <div class="purple"></div>
+              <div class="orange"></div>
+              <div class="orange-curve"></div>
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green-curve-left"></div>
+              <div class="green-curve-right"></div>
+              <div class="green"></div>
+              <div class="green-none"></div>
+              <div class="green-leaf"></div>
+              <div class="bottom-left-none"></div>
+              <div class="bottom-right-none"></div>
+              <div class="top-left-none"></div>
+              <div class="top-right-none"></div>
+              <div class="apple-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-apple-large&quot;&gt;
+  &lt;div class=&quot;blue-curve-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;blue-curve-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;blue-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;purple&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;orange&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;orange-curve&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;yellow&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;green-curve-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;green-curve-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;green-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;green-leaf&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;bottom-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;bottom-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;top-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;top-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;apple-none&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="apple/apple.html">apple/apple.html</a> ·
+          <a href="apple/apple.css">apple/apple.css</a> ·
+          <a href="apple/apple.less">apple/apple.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="dropbox">
+        <header>
+          <h2>Dropbox</h2>
+          <p><code>dropbox</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-dropbox-large">
+              <div class="base-left"></div>
+              <div class="base-right"></div>
+              <div class="base-middle"></div>
+              <div class="cover-left-none"></div>
+              <div class="cover-right-none"></div>
+              <div class="cover-top"></div>
+              <div class="cover-right"></div>
+              <div class="cover-bottom"></div>
+              <div class="cover-left"></div>
+              <div class="box-none"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-dropbox-small">
+              <div class="base-left"></div>
+              <div class="base-right"></div>
+              <div class="base-middle"></div>
+              <div class="cover-left-none"></div>
+              <div class="cover-right-none"></div>
+              <div class="cover-top"></div>
+              <div class="cover-right"></div>
+              <div class="cover-bottom"></div>
+              <div class="cover-left"></div>
+              <div class="box-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-dropbox-large&quot;&gt;
+  &lt;div class=&quot;base-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;base-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;base-middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cover-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;box-none&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="dropbox/dropbox.html">dropbox/dropbox.html</a> ·
+          <a href="dropbox/dropbox.css">dropbox/dropbox.css</a> ·
+          <a href="dropbox/dropbox.less">dropbox/dropbox.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="evernote">
+        <header>
+          <h2>Evernote</h2>
+          <p><code>evernote</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-evernote-large">
+              <div class="head"></div>
+              <div class="head-top"></div>
+              <div class="head-right"></div>
+              <div class="head-bottom"></div>
+              <div class="trunk-right"></div>
+              <div class="trunk-bottom"></div>
+              <div class="trunk-left"></div>
+              <div class="trunk-bottom-none"></div>
+              <div class="trunk-right-none"></div>
+              <div class="trunk-left-none"></div>
+              <div class="head-none"></div>
+              <div class="eye"></div>
+              <div class="ear-flap"></div>
+              <div class="ear-flap-left-none"></div>
+              <div class="ear-flap-right-none"></div>
+              <div class="body-top"></div>
+              <div class="body-left"></div>
+              <div class="body-bottom-right"></div>
+              <div class="body-bottom-left"></div>
+              <div class="body-bottom"></div>
+              <div class="body-middle"></div>
+              <div class="body"></div>
+              <div class="ear-curve-none"></div>                                                                  
+              <div class="ear-curve"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-evernote-small">
+              <div class="head"></div>
+              <div class="head-top"></div>
+              <div class="head-right"></div>
+              <div class="head-bottom"></div>
+              <div class="trunk-right"></div>
+              <div class="trunk-bottom"></div>
+              <div class="trunk-left"></div>
+              <div class="trunk-bottom-none"></div>
+              <div class="trunk-right-none"></div>
+              <div class="trunk-left-none"></div>
+              <div class="head-none"></div>
+              <div class="eye"></div>
+              <div class="ear-flap"></div>
+              <div class="ear-flap-left-none"></div>
+              <div class="ear-flap-right-none"></div>
+              <div class="body-top"></div>
+              <div class="body-left"></div>
+              <div class="body-bottom-right"></div>
+              <div class="body-bottom-left"></div>
+              <div class="body-bottom"></div>
+              <div class="body-middle"></div>
+              <div class="body"></div>
+              <div class="ear-curve-none"></div>                                                                  
+              <div class="ear-curve"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-evernote-large&quot;&gt;
+  &lt;div class=&quot;head&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head-top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-bottom-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;trunk-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;eye&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-flap&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-flap-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-flap-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-bottom-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-bottom-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-curve-none&quot;&gt;&lt;/div&gt;                                                                  
+  &lt;div class=&quot;ear-curve&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="evernote/evernote.html">evernote/evernote.html</a> ·
+          <a href="evernote/evernote.css">evernote/evernote.css</a> ·
+          <a href="evernote/evernote.less">evernote/evernote.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="facebook">
+        <header>
+          <h2>Facebook</h2>
+          <p><code>facebook</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-facebook-large">
+              <div class="longpiece"></div>
+              <div class="longpiece-none"></div>
+              <div class="shortpiece"></div>
+              <div class="shortpiece-none"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-facebook-small">
+              <div class="longpiece"></div>
+              <div class="longpiece-none"></div>
+              <div class="shortpiece"></div>
+              <div class="shortpiece-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-facebook-large&quot;&gt;
+  &lt;div class=&quot;longpiece&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;longpiece-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;shortpiece&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;shortpiece-none&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="facebook/facebook.html">facebook/facebook.html</a> ·
+          <a href="facebook/facebook.css">facebook/facebook.css</a> ·
+          <a href="facebook/facebook.less">facebook/facebook.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="github">
+        <header>
+          <h2>Github</h2>
+          <p><code>github</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-github-large">
+              <div class="ear-one-left"></div>
+              <div class="ear-one-none"></div>
+              <div class="ear-one-right"></div>
+              <div class="ear-two-right"></div>
+              <div class="ear-two-none"></div>
+              <div class="ear-two-left"></div>
+              <div class="body-bottom"></div>
+              <div class="body-left-none"></div>
+              <div class="body-right-none"></div>
+              <div class="tail-end"></div>
+              <div class="tail-body"></div>
+              <div class="tail-body-spots"></div>
+              <div class="tail-end-none"></div>
+              <div class="tail-body-none"></div>
+              <div class="tail-tip"></div>
+              <div class="body-left"></div>
+              <div class="body-right"></div>
+              <div class="head"></div>
+              <div class="chin-left"></div>
+              <div class="chin-right"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-github-small">
+              <div class="ear-one-left"></div>
+              <div class="ear-one-none"></div>
+              <div class="ear-one-right"></div>
+              <div class="ear-two-right"></div>
+              <div class="ear-two-none"></div>
+              <div class="ear-two-left"></div>
+              <div class="body-bottom"></div>
+              <div class="body-left-none"></div>
+              <div class="body-right-none"></div>
+              <div class="tail-end"></div>
+              <div class="tail-body"></div>
+              <div class="tail-body-spots"></div>
+              <div class="tail-end-none"></div>
+              <div class="tail-body-none"></div>
+              <div class="tail-tip"></div>
+              <div class="body-left"></div>
+              <div class="body-right"></div>
+              <div class="head"></div>
+              <div class="chin-left"></div>
+              <div class="chin-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-github-large&quot;&gt;
+  &lt;div class=&quot;ear-one-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-one-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-one-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-two-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-two-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ear-two-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-left-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-right-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-end&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-body&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-body-spots&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-end-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-body-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tail-tip&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-right&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;chin-left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;chin-right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="github/github.html">github/github.html</a> ·
+          <a href="github/github.css">github/github.css</a> ·
+          <a href="github/github.less">github/github.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="linkedin">
+        <header>
+          <h2>Linkedin</h2>
+          <p><code>linkedin</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-linkedin-large">
+              <div class="i-dot"></div>
+              <div class="i-body"></div>
+              <div class="n-body"></div>
+              <div class="n-curve"></div>
+              <div class="n-curve-none"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-linkedin-small">
+              <div class="i-dot"></div>
+              <div class="i-body"></div>
+              <div class="n-body"></div>
+              <div class="n-curve"></div>
+              <div class="n-curve-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-linkedin-large&quot;&gt;
+  &lt;div class=&quot;i-dot&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;i-body&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;n-body&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;n-curve&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;n-curve-none&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="linkedin/linkedin.html">linkedin/linkedin.html</a> ·
+          <a href="linkedin/linkedin.css">linkedin/linkedin.css</a> ·
+          <a href="linkedin/linkedin.less">linkedin/linkedin.less</a>
+        </p>
+      </article>
+
+      <article class="logo-card" id="twitter">
+        <header>
+          <h2>Twitter</h2>
+          <p><code>twitter</code></p>
+        </header>
+
+        <div class="logo-preview-row">
+          <div class="logo-preview preview-large">
+            <div class="logo-twitter-large">
+              <div class="body"></div>
+              <div class="body-none"></div>
+              <div class="beak-bottom"></div>
+              <div class="beak-bottom-none"></div>
+              <div class="wing-bottom"></div>
+              <div class="wing-bottom-none"></div>
+              <div class="wing-middle"></div>
+              <div class="wing-middle-none"></div>
+              <div class="wing-top"></div>
+              <div class="wing-top-none"></div>
+              <div class="beak-top"></div>
+              <div class="beak-top-none"></div>
+              <div class="head"></div>
+            </div>
+          </div>
+          <div class="logo-preview preview-small">
+            <div class="logo-twitter-small">
+              <div class="body"></div>
+              <div class="body-none"></div>
+              <div class="beak-bottom"></div>
+              <div class="beak-bottom-none"></div>
+              <div class="wing-bottom"></div>
+              <div class="wing-bottom-none"></div>
+              <div class="wing-middle"></div>
+              <div class="wing-middle-none"></div>
+              <div class="wing-top"></div>
+              <div class="wing-top-none"></div>
+              <div class="beak-top"></div>
+              <div class="beak-top-none"></div>
+              <div class="head"></div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>HTML snippet</summary>
+          <pre><code>&lt;div class=&quot;logo-twitter-large&quot;&gt;
+  &lt;div class=&quot;body&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;body-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;beak-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;beak-bottom-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-bottom&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-bottom-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-middle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-middle-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wing-top-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;beak-top&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;beak-top-none&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;head&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </details>
+
+        <p class="logo-files">
+          Pliki: <a href="twitter/twitter.html">twitter/twitter.html</a> ·
+          <a href="twitter/twitter.css">twitter/twitter.css</a> ·
+          <a href="twitter/twitter.less">twitter/twitter.less</a>
+        </p>
+      </article>
+      </section>
+    </main>
+  </body>
+</html>
