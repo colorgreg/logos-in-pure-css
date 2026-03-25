@@ -50,6 +50,23 @@ Once imported, copy the accompanying logo .html into your own .html file and the
 
 To see it this in action, open `demo.html` in your browser.
 
+
+UI kit (lokalnie i online)
+--------------------------
+
+W repo znajduje się automatycznie generowany katalog komponentów: `ui-kit.html`.
+
+- **Lokalnie:** otwórz plik `ui-kit.html` w przeglądarce lub uruchom prosty serwer HTTP.
+- **Aktualizacja katalogu:** po dodaniu nowego logo (folder + `name.html` + `name.css` + `name.less`) uruchom:
+
+```bash
+node scripts/generate-ui-kit.js
+```
+
+Skrypt sam wykryje dostępne elementy i uzupełni UI kit o nowe pozycje.
+
+- **Online:** wrzuć repo na GitHub i włącz GitHub Pages dla gałęzi z plikiem `ui-kit.html` (np. root branch), aby mieć publiczny podgląd.
+
 Sizes
 -------
 
